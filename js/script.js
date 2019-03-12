@@ -8,8 +8,6 @@ var songs = ['Chunky','Shenyeng Anthem','Wow','Feel this moment'];
       
 });
 
- 
-
 var imagesurls=["https://i.ytimg.com/vi/oacaq_1TkMU/maxresdefault.jpg", "https://images.genius.com/deecdf35caf0f60a9c0d1bb48c3ee3e1.800x800x1.jpg", "https://i.ytimg.com/vi/3fhbxflfsNs/hqdefault.jpg"  ]
 
 var artists=['Bruno Mars', 'Sheensea', 'Post Malone', 'Pitbull' ]
@@ -17,7 +15,7 @@ var artists=['Bruno Mars', 'Sheensea', 'Post Malone', 'Pitbull' ]
       
 });
 
-var songlengths= [  ]
+var songlengths= ["3:06","2:19","2:29","3:49"  ]
  songlengths.forEach(function(Lengthslist){
       
 });
@@ -30,8 +28,31 @@ var links= ["https://www.youtube.com/watch?v=oacaq_1TkMU",'https://www.youtube.c
 
 function displaySongInfo(){
     // BELOW Use forEach Loop to display the data from each of your arrays in the correct div
+var Chunky={
+    photo:"https://i.ytimg.com/vi/oacaq_1TkMU/maxresdefault.jpg",
+    artist:  "Bruno Mars ",
+    link:"https://www.youtube.com/watch?v=oacaq_1TkMU",
+    name: "Chunky"
+};
+    
+var songs=[Chunky,
+];
 
+var Shenyeng Anthem={
+    photo:"https://i.ytimg.com/vi/oacaq_1TkMU/maxresdefault.jpg",
+    artist:  "Bruno Mars ",
+    link:"https://www.youtube.com/watch?v=oacaq_1TkMU",
+    name: "Chunky"
+};
+    
+
+
+
+songs.forEach(function(n) {
+    $("#songs").append("<p>"+n.name+"</p>");
+});
 }
+
 
 function emptySongInfo(){
     $("#songs").empty();
